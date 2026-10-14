@@ -1,0 +1,71 @@
+---------------------------------------------
+General and Operating System
+---------------------------------------------
+.DS_Store
+.env
+.idea/
+.project
+.vscode/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+Temporary files
+*.tmp
+*~
+
+---------------------------------------------
+Python Specific
+---------------------------------------------
+pycache/
+*.pyc
+*.pyo
+*.pyd
+.venv
+venv/
+env/
+
+---------------------------------------------
+Node.js
+---------------------------------------------
+node_modules/
+dist/
+build/
+
+---------------------------------------------
+Compiled and Binary Files
+---------------------------------------------
+*.o
+*.a
+*.so
+*.dll
+*.class
+*.exe
+
+---------------------------------------------
+IDE and Editor Files
+---------------------------------------------
+VS Code
+.vscode/
+
+IntelliJ / PyCharm
+.idea/
+.iml
+*.iws
+*.ipr
+
+Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+Atom
+.atom/
+
+---------------------------------------------
+Logs and Test Artifacts
+---------------------------------------------
+logs/
+*.log
+coverage/
+.coverage
+htmlcov/

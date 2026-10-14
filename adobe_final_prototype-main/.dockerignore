@@ -1,0 +1,33 @@
+# Git version control files
+.git
+.gitignore
+
+# Docker specific files
+Dockerfile
+.dockerignore
+
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Node.js dependencies and build artifacts
+# These are handled inside the Docker build stages
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+npm-debug.log
+yarn-error.log
+
+# IDE and OS specific files
+.vscode/
+.idea/
+*.DS_Store
+
+# Environment files - NEVER include these in your image
+.env
+.env.*

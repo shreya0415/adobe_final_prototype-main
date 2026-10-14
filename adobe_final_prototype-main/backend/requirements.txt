@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+httpx
+scikit-learn
+python-dotenv
+python-multipart
+PyMuPDF
+pydantic
+openai
+requests
+aiofiles 

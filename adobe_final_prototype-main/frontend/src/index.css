@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PersonaLens Design System - AI-Inspired with Adobe-like aesthetics */
+
+@layer base {
+  :root {
+    /* Core Background & Foreground */
+    --background: 210 11% 96%;
+    --foreground: 220 13% 9%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 9%;
+
+    /* Popover System */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 9%;
+
+    /* Primary - AI Blue with depth */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 221 83% 70%;
+    --primary-deep: 221 83% 35%;
+
+    /* Secondary - Sophisticated Purple */
+    --secondary: 261 52% 59%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 261 52% 75%;
+
+    /* Accent - Bright Cyan for highlights */
+    --accent: 191 91% 55%;
+    --accent-foreground: 220 13% 9%;
+    --accent-glow: 191 91% 70%;
+
+    /* Muted tones for subtle elements */
+    --muted: 210 11% 91%;
+    --muted-foreground: 215 13% 45%;
+
+    /* Success - AI Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Interactive Elements */
+    --border: 214 13% 85%;
+    --input: 214 13% 85%;
+    --ring: 221 83% 53%;
+
+    /* AI-Inspired Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-ai: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows with AI glow effects */
+    --shadow-ai: 0 20px 50px -12px hsl(var(--primary) / 0.4);
+    --shadow-accent: 0 20px 50px -12px hsl(var(--accent) / 0.3);
+    --shadow-subtle: 0 4px 20px -4px hsl(220 13% 9% / 0.1);
+    --shadow-card: 0 8px 30px -8px hsl(220 13% 9% / 0.12);
+
+    /* Glass morphism effects */
+    --glass-bg: hsl(0 0% 100% / 0.8);
+    --glass-border: hsl(220 13% 9% / 0.1);
+
+    /* Typography scale for Adobe-like boldness */
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    /* Animation timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --radius: 12px;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode - Deep AI aesthetic */
+    --background: 220 13% 6%;
+    --foreground: 210 40% 98%;
+
+    /* Card System - Dark glass */
+    --card: 220 13% 8%;
+    --card-foreground: 210 40% 98%;
+
+    /* Popover System */
+    --popover: 220 13% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - Brighter AI Blue for dark mode */
+    --primary: 221 83% 65%;
+    --primary-foreground: 220 13% 6%;
+    --primary-glow: 221 83% 80%;
+    --primary-deep: 221 83% 45%;
+
+    /* Secondary - Enhanced Purple */
+    --secondary: 261 52% 70%;
+    --secondary-foreground: 220 13% 6%;
+    --secondary-glow: 261 52% 85%;
+
+    /* Accent - Vivid Cyan */
+    --accent: 191 91% 65%;
+    --accent-foreground: 220 13% 6%;
+    --accent-glow: 191 91% 80%;
+
+    /* Muted dark tones */
+    --muted: 220 13% 12%;
+    --muted-foreground: 215 13% 65%;
+
+    /* Success in dark */
+    --success: 142 76% 45%;
+    --success-foreground: 220 13% 6%;
+
+    /* Destructive */
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 220 13% 6%;
+
+    /* Interactive Elements */
+    --border: 220 13% 15%;
+    --input: 220 13% 15%;
+    --ring: 221 83% 65%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-ai: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Enhanced shadows for dark mode */
+    --shadow-ai: 0 20px 50px -12px hsl(var(--primary) / 0.6);
+    --shadow-accent: 0 20px 50px -12px hsl(var(--accent) / 0.5);
+    --shadow-subtle: 0 4px 20px -4px hsl(220 13% 2% / 0.4);
+    --shadow-card: 0 8px 30px -8px hsl(220 13% 2% / 0.5);
+
+    /* Dark glass morphism */
+    --glass-bg: hsl(220 13% 8% / 0.8);
+    --glass-border: hsl(210 40% 98% / 0.1);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+/* Insights Panel Styling */
+.insights-container {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 450px; /* wider */
+  height: 300px; /* taller */
+  background: #1e1e1e;
+  color: #f5f5f5;
+  font-family: monospace;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: auto; /* SCROLLBAR */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+.insights-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ffb3;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #00ffb3;
+  padding-bottom: 5px;
+}
+
+.insights-loading {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #00ffb3, #0077ff);
+  background-size: 200% 100%;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

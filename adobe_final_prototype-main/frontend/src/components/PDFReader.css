@@ -1,0 +1,134 @@
+/* Insights modal container */
+.insights-modal {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: linear-gradient(145deg, #2a2d3a 0%, #1f2229 100%);
+   color: #ffffff;
+   padding: 32px;
+   border-radius: 24px;
+   width: 600px;
+   max-height: 500px;
+   overflow-y: auto;
+   box-shadow: 
+       0 20px 60px rgba(0, 0, 0, 0.4),
+       0 8px 25px rgba(0, 0, 0, 0.3),
+       inset 0 1px 0 rgba(255, 255, 255, 0.1);
+   z-index: 9999;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(10px);
+}
+
+/* Heading style */
+.insights-heading {
+   font-size: 1.5rem;
+   font-weight: 700;
+   margin-bottom: 20px;
+   background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   letter-spacing: -0.02em;
+}
+
+/* Close button */
+.insights-close {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+   padding: 10px 20px;
+   background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+   color: white;
+   border: none;
+   border-radius: 12px;
+   cursor: pointer;
+   font-weight: 600;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.insights-close:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.insights-close:active {
+   transform: translateY(0px);
+}
+
+/* Loading spinner */
+.insights-loading {
+   text-align: center;
+   font-size: 1rem;
+   padding: 40px 20px;
+   color: #a0a3bd;
+   font-weight: 500;
+}
+
+.insights-loading::before {
+   content: '';
+   display: block;
+   width: 40px;
+   height: 40px;
+   margin: 0 auto 16px;
+   border: 3px solid rgba(255, 255, 255, 0.1);
+   border-top: 3px solid #667eea;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar */
+.insights-modal::-webkit-scrollbar {
+   width: 8px;
+}
+
+.insights-modal::-webkit-scrollbar-track {
+   background: rgba(255, 255, 255, 0.05);
+   border-radius: 4px;
+}
+
+.insights-modal::-webkit-scrollbar-thumb {
+   background: linear-gradient(135deg, #667eea, #764ba2);
+   border-radius: 4px;
+}
+
+.insights-modal::-webkit-scrollbar-thumb:hover {
+   background: linear-gradient(135deg, #5a6fd8, #6a4190);
+}
+/* make each page a positioned container for overlays */
+.pdf-page {
+  position: relative;
+}
+
+/* text layer (selectable, invisible so it doesn't double-render text) */
+.textLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: auto;
+}
+.textLayer > span {
+  position: absolute;
+  transform-origin: 0 0;
+  white-space: pre;
+  color: transparent;            /* invisible text, still selectable */
+  user-select: text;             /* ensure selection works */
+}
+.textLayer ::selection {
+  background: rgba(180, 213, 255, 0.35);
+}
+
+/* highlight boxes drawn over selected regions */
+.highlight-box {
+  position: absolute;
+  background: rgba(255, 230, 0, 0.45);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  border-radius: 2px;
+}
