@@ -4,7 +4,6 @@ AI-powered document analysis with intelligent reading assistance. PersonaLens he
 ![WhatsApp Image 2025-08-19 at 18 48 03_6e467242](https://github.com/user-attachments/assets/fdcdd20b-2d94-4464-972e-3a4e21f0079e)
 ![WhatsApp Image 2025-08-19 at 18 49 07_e65a5fda](https://github.com/user-attachments/assets/7d66cc7f-3a96-4eb5-a8e2-3cff15777729)
 ![WhatsApp Image 2025-08-19 at 18 49 43_07c05fd2](https://github.com/user-attachments/assets/7b95c2c8-9a7d-4d44-8bb1-6d16cb639a5c)
-![Uploading WhatsApp Image 2025-08-19 at 18.50.19_41ffdeb3.jpg…]()
 
 
 
